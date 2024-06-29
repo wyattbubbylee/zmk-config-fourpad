@@ -16,6 +16,13 @@
             #binding-cells = <0>;
             bindings = <&kp LG(NUMBER_3)>, <&to 1>, <&kp K_PLAY_PAUSE>;
         };
+
+        DE: DE {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DE";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&kp E>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -28,7 +35,7 @@
             label = "Default";
             bindings = <
 &kp W  &kp S
-&kp A  &kp D
+&kp A  &DE
             >;
         };
 
