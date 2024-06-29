@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -28,8 +27,8 @@
         default_layer {
             label = "Default";
             bindings = <
-&lgui7_7      &kp N8      
-&kp NUMBER_4  &kp N5      
+&kp W  &kp S
+&kp A  &kp D
             >;
         };
 
@@ -43,8 +42,8 @@
         bt_layer {
             label = "bt";
             bindings = <
-&bootloader   &none
-&none         &kp A
+&bootloader  &none
+&none        &kp A
             >;
         };
     };
