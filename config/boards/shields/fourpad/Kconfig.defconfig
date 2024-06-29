@@ -1,0 +1,9 @@
+if SHIELD_FOURPAD
+
+config ZMK_KEYBOARD_NAME
+    default "Fourpad"
+
+config USB_DEVICE_MANUFACTURER
+    default "Waylon Walker"
+
+endif
